@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context=".MainActivity">
+  
+  <RelativeLayout
+    android:id="@+id/base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="?attr/colorPrimary"
+      android:elevation="4dp"
+      android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+      app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+      app:title="EMDK Scanning Demo"
+      app:subtitle="Accessing, Enabling, Configuring and Utilising the EMDK Scanner"
+      app:titleTextColor="#FFF"
+      app:subtitleTextColor="#FFF"
+      app:navigationIcon="@drawable/ic_qr_code"/>
+
+    <com.badoualy.stepperindicator.StepperIndicator
+      android:id="@+id/step_indicator"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/toolbar"
+      app:stpi_stepCount="4"/>
+    
+    <android.support.v4.view.ViewPager
+      android:id="@+id/fragment_view_pager"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/step_indicator"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+      android:id="@+id/result_animation"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentBottom="true"
+      android:visibility="gone"
+      android:elevation="1000dp"
+      app:lottie_loop="false"
+      app:lottie_autoPlay="false" />
+  
+  </RelativeLayout>
+</layout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+  <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.InitEmdkFragment">
+
+    <LinearLayout
+      android:id="@+id/config_params_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/symbologies_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Symbologies"/>
+
+      <LinearLayout
+        android:id="@+id/symbology_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+          android:id="@+id/code_128"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Code 128"/>
+
+        <CheckBox
+          android:id="@+id/code_39"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Code 39"/>
+
+        <CheckBox
+          android:id="@+id/code_upca"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Code upca"/>
+
+        <CheckBox
+          android:id="@+id/code_qr"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Code QR"/>
+
+      </LinearLayout>
+
+      <TextView
+        android:id="@+id/feedback_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Feedback"/>
+
+      <LinearLayout
+        android:id="@+id/feedback_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+          android:id="@+id/haptic_feedback"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Haptic"/>
+
+        <CheckBox
+          android:id="@+id/auditory_feedback"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Auditory"/>
+
+      </LinearLayout>
+
+      <Button
+        android:id="@+id/configure_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:text="CONFIGURE_SCANNER"/>
+
+    </LinearLayout>
+
+  </FrameLayout>
+
+</layout>

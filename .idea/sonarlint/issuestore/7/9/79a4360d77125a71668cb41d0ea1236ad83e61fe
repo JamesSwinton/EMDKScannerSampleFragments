@@ -1,0 +1,8 @@
+
+Fsquid:S1185""(Remove this method to simply inherit it.(ßìê¯8Ûííñ°-
+psquid:UselessImportCheck"ERemove this unused import 'com.symbol.emdk.EMDKManager.EMDKListener'.(ƒÅ„“8¥©òñ°-
+Esquid:S1068"'Remove this unused "TAG" private field.(©É‡8´öñ°-
+ysquid:S1450"[Remove the "mDataBinding" field and declare it as a local variable in the relevant methods.(§ñğ8­øÿğ°-
+nsquid:UselessImportCheck
+">Remove this unused import 'android.view.View.OnClickListener'.(„û°™ıÿÿÿÿ8öŸõñ°-
+]squid:UselessImportCheck"-Remove this unused import 'android.util.Log'.(Ô¦Ø²øÿÿÿÿ8´öñ°-
